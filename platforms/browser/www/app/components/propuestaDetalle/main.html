@@ -1,9 +1,9 @@
 <md-toolbar flex>
   <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
-    <md-button class="md-icon-button" aria-label="Menu" ng-click="propuesta.toggle()">
+    <md-button class="md-icon-button" aria-label="Menu" ng-click="detalle.toggle()">
       <md-icon>menu</md-icon>
     </md-button>
-    <p>{{ propuesta.title }}</p>
+    <p>{{detalle.title }}</p>
     <div style="width: 40px; height: 40px;"></div>
   </div>
 </md-toolbar>
@@ -33,13 +33,37 @@
 </md-sidenav>
 
 <div layout="column" layout-align="center center" flex>
-  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
+ <form>
     <div layout="column" flex style="margin-left: 1em;">
+      <h4 align="center">PROPUESTA 1:</h4>
+
+      <p style="margin-top: 1em;">Parrafoooo </p>
+      <h4>Opciones: </h4>
+      <div layout-gt-sm="row">
+        A favor    <input type="radio" ng-model="color.name" value="3"> 
+       
+      </div>
+      <div layout-gt-sm="row">
+        En Contra  <input type="radio" ng-model="color.name" value="4"> 
+      </div>
+      <h4>Deje su comentario: </h4> 
+        <div layout-gt-sm="row">
+          
+          <md-input-container class="md-block" flex-gt-sm="">
+            <label>First name</label>
+            <input ng-model="user.firstName">
+          </md-input-container>
+      </div>
+
+  </form>      
+       
+      
+
       
     </div>
+</form>
 
 
-  </md-whiteframe>
 
 
 </div>
