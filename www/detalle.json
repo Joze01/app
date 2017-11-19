@@ -1,0 +1,78 @@
+[
+  {
+    "comentarios": [],
+    "opinion_ciudadana": [],
+    "usuarios": {
+      "comentarios": [],
+      "departamento1": {
+        "usuarios": [
+          {
+            "comentarios": [],
+            "institucion1": {
+              "institucion1": [],
+              "institucion2": null,
+              "usuarios": [],
+              "id_institucion": 3,
+              "nombre": "Ministerio de Salud",
+              "dependencia": null
+            },
+            "propuestas": [],
+            "respuestas": [],
+            "tipo_usuario": {
+              "usuarios": [],
+              "id_tipo": 1,
+              "tipo": "Funcionario",
+              "descripcion": "tipo de Usuario para cada funcionario publico"
+            },
+            "opinion_ciudadana": [],
+            "id_usuario": 2,
+            "dui": "01234567-9",
+            "nombres": "Mengano",
+            "apellidos": "De Tal",
+            "edad": 21,
+            "sexo": "M",
+            "institucion": 3,
+            "departamento": 1,
+            "tipo": 1
+          }
+        ],
+        "id_depto": 1,
+        "nombre": "San Salvador"
+      },
+      "institucion1": {
+        "institucion1": [],
+        "institucion2": null,
+        "usuarios": [],
+        "id_institucion": 5,
+        "nombre": "Población",
+        "dependencia": null
+      },
+      "propuestas": [],
+      "respuestas": [],
+      "tipo_usuario": {
+        "usuarios": [],
+        "id_tipo": 2,
+        "tipo": "Población",
+        "descripcion": "tipo de Usuario para la poblacion salvadoreña"
+      },
+      "opinion_ciudadana": [],
+      "id_usuario": 1,
+      "dui": "01234567-8",
+      "nombres": "Fulano",
+      "apellidos": "De Tal",
+      "edad": 21,
+      "sexo": "M",
+      "institucion": 5,
+      "departamento": 1,
+      "tipo": 2
+    },
+    "id_propuesta": 1,
+    "nombre": "Pensiones",
+    "descripción": "Cambio en la forma de pensiones - argumento 1",
+    "ubicacion_archivo": "NULLdfdsf",
+    "usuario_propone": 1,
+    "propuesto_por": "Hacienda                                                                                            ",
+    "fecha_publicacion": "2017-10-10T00:00:00",
+    "fecha_revision": "2017-10-24T00:00:00"
+  }
+]
