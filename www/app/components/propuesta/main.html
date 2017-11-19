@@ -36,13 +36,15 @@
     <md-content>
        <md-list flex>
         <md-subheader class="md-no-sticky">Listado Propuetas</md-subheader>
+        <a href="/app/www/#/detalle">
           <md-list-item class="md-3-line" ng-repeat="item in todos" ng-click="null">
                       <div class="md-list-item-text" layout="column">
                       <h3>{{ item.who }}</h3>
                       <h4>{{ item.what }}</h4>
                       <p>{{ item.notes }}</p>
-          </div>
-          </md-list-item>
+              </div>
+            </md-list-item>
+          </a>
        </md-list>
     </md-content>  
 </div>

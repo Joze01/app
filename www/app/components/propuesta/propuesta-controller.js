@@ -14,34 +14,34 @@ angular.module("ngapp").controller("propuestaController", function(shared, $stat
 
     $scope.todos = [
       {
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Hacienda',
+        who: 'Ley de Pensiones',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Descripción breve acerca de la reforma"
       },
       {
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Dirección General de centros penales',
+        who: 'Ley penitenciaria',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Descripción breve acerca de la reforma"
       },
       {
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Tribunal Supremo Electoral',
+        who: 'Ley de partidos políticos',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Descripción breve acerca de la reforma"
       },
       {
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Corte de cuentas',
+        who: 'Ley reajuste fondos',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Descripción breve acerca de la reforma"
       },
       {
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Ministerio de exterior',
+        who: 'Ley Transitoria',
         when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
+        notes: " Descripción breve acerca de la reforma"
       },
     ];
 

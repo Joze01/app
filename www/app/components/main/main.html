@@ -40,25 +40,34 @@
 </script>
 
 <div layout="column" layout-align="center center" flex>
-  <hgroup>
-  <h1>LOGO</h1>
-</hgroup>
-<form>
+  <img src="http://i66.tinypic.com/2yyryb8.png" style="margin:auto; margin-top: 10px;">
+<form style='margin-top: 0px;'>
   <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <input type="number" id="DUI" maxlength="9"><span class="highlight"></span><span class="bar"></span>
     <label>DUI</label>
   </div>
   <div class="group">
-    <input type="password"><span class="highlight"></span><span class="bar"></span>
+    <input type="password" id="CLAVE"><span class="highlight"></span><span class="bar"></span>
     <label>CONTRASEÑA</label>
   </div>
-  <button  type="button" class="button buttonBlue">ACCEDER
+  <script>
+  function brave () {
+    var nombre = document.getElementById("DUI");
+    var clave = document.getElementById("CLAVE");
+    console.log(nombre);
+    console.log(clave);
+
+    if(nombre.value=="052635851" && clave.value=="123456")
+      window.location.href = "/app/www/#/propuesta";
+    else
+      alert("Usuario incorrecto");
+  }
+
+  </script>
+  <button  type="button" class="button buttonBlue" onclick="brave()">ACCEDER
     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
   </button>
   <div class="group">
-    <div style="text-align:center">
-      <a href="#" class="center-align">Saltar</a>
-    </div>
   </div>  
 </form>
 </div>
