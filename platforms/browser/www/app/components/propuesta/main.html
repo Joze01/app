@@ -1,0 +1,45 @@
+<md-toolbar flex>
+  <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+    <md-button class="md-icon-button" aria-label="Menu" ng-click="propuesta.toggle()">
+      <md-icon>menu</md-icon>
+    </md-button>
+    <p>{{ propuesta.title }}</p>
+    <div style="width: 40px; height: 40px;"></div>
+  </div>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+  <md-toolbar>
+    <h1 class="md-toolbar-tools">Menu</h1>
+  </md-toolbar>
+  <md-list ng-cloak>
+    <md-list-item ng-href="#">
+      <md-icon style="padding-right: 16px; color: #000000">view_list</md-icon>
+      <p>Propuesta</p>
+    </md-list-item>
+    <md-list-item ng-href="#">
+      <md-icon style="padding-right: 16px; color: #000000">thumbs_up_down</md-icon>
+      <p>Resultados</p>
+    </md-list-item>
+    <md-list-item ng-href="#">
+      <md-icon style="padding-right: 16px; color: #000000">code</md-icon>
+      <p>Info</p>
+    </md-list-item>
+    <md-list-item ng-href="#">
+      <md-icon style="padding-right: 16px; color: #000000">enhanced_encryption</md-icon>
+      <p>Cerrar Session</p>
+    </md-list-item>
+  </md-list>
+</md-sidenav>
+
+<div layout="column" layout-align="center center" flex>
+  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
+    <div layout="column" flex style="margin-left: 1em;">
+      
+    </div>
+    <md-divider></md-divider>
+
+  </md-whiteframe>
+
+
+</div>

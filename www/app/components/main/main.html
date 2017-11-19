@@ -8,42 +8,57 @@
   </div>
 </md-toolbar>
 
-<md-sidenav class="md-sidenav-left" md-component-id="left">
-  <md-toolbar>
-    <h1 class="md-toolbar-tools">SideNav Menu</h1>
-  </md-toolbar>
-  <md-list ng-cloak>
-    <md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
-      <md-icon style="padding-right: 16px; color: #000000">school</md-icon>
-      <p>Material Design</p>
-    </md-list-item>
-    <md-list-item ng-href="https://material.angularjs.org/latest/">
-      <md-icon style="padding-right: 16px; color: #000000">settings_ethernet</md-icon>
-      <p>Angular Material</p>
-    </md-list-item>
-  </md-list>
-</md-sidenav>
+
+
+<script type="text/javascript">
+  $(window, document, undefined).ready(function() {
+    $('input').blur(function() {
+      var $this = $(this);
+      if ($this.val())
+        $this.addClass('used');
+      else
+        $this.removeClass('used');
+    });
+    var $ripples = $('.ripples');
+    $ripples.on('click.Ripples', function(e) {
+      var $this = $(this);
+      var $offset = $this.parent().offset();
+      var $circle = $this.find('.ripplesCircle');
+      var x = e.pageX - $offset.left;
+      var y = e.pageY - $offset.top;
+      $circle.css({
+        top: y + 'px',
+        left: x + 'px'
+      });
+      $this.addClass('is-active');
+    });
+    $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+      $(this).removeClass('is-active');
+    });
+  });
+
+</script>
 
 <div layout="column" layout-align="center center" flex>
-  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
-    <div layout="column" flex style="margin-left: 1em;">
-      <h4>Project:</h4>
-      <p style="margin-top: -1em;">Cordova-Angular-AngularMaterial-Seed</p>
-      <h4>Created by:</h4>
-      <p style="margin-top: -1em;">MarioAleo</p>
+  <hgroup>
+  <h1>LOGO</h1>
+</hgroup>
+<form>
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>DUI</label>
+  </div>
+  <div class="group">
+    <input type="password"><span class="highlight"></span><span class="bar"></span>
+    <label>CONTRASEÑA</label>
+  </div>
+  <button  type="button" class="button buttonBlue">ACCEDER
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+  </button>
+  <div class="group">
+    <div style="text-align:center">
+      <a href="#" class="center-align">Saltar</a>
     </div>
-    <md-divider></md-divider>
-    <div layout="row" layout-align="space-around center" flex="20">
-      <md-button class="md-icon-button" aria-label="Project" ng-href="https://github.com/mario-aleo/cordova-angular-angularMaterial-seed">
-        <md-icon style="color: #000000">book</md-icon>
-      </md-button>
-      <md-button class="md-icon-button" aria-label="Creator" ng-href="https://github.com/mario-aleo">
-        <md-icon style="color: #000000">favorite</md-icon>
-      </md-button>
-    </div>
-  </md-whiteframe>
-
-  <md-button class="md-fab md-primary" aria-label="Menu">
-    <md-icon>menu</md-icon>
-  </md-button>
+  </div>  
+</form>
 </div>
