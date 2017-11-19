@@ -33,13 +33,20 @@
 </md-sidenav>
 
 <div layout="column" layout-align="center center" flex>
-  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
-    <div layout="column" flex style="margin-left: 1em;">
-      
-    </div>
+<div ng-controller="propuesta" ng-cloak="" layout-gt-sm="row" layout="column"  >
 
+  <div flex-gt-sm="50" flex="">
 
-  </md-whiteframe>
-
+    <md-content>
+      <md-list flex="">
+        <md-list-item class="md-3-line" ng-repeat="item in todos" ng-click="null">
+          <div class="md-list-item-text" layout="column">
+            <h3>{{ item.who }}</h3>
+          </div>
+        </md-list-item>
+      </md-list>
+    </md-content>
+  </div>
+</div>
 
 </div>

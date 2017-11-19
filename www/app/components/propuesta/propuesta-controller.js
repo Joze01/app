@@ -10,31 +10,45 @@ angular.module("ngapp").controller("propuestaController", function(shared, $stat
 
     this.title = $state.current.title;
 
-    $scope.provincias = [{
-      codProvincia: "02",
-      nombre: "Albacete"
-    }, {
-      codProvincia: "03",
-      nombre: "Alicante/Alacant"
-    }, {
-      codProvincia: "04",
-      nombre: "Almería"
-    }, {
-      codProvincia: "01",
-      nombre: "Araba/Álava"
-    }, {
-      codProvincia: "33",
-      nombre: "Asturias"
-    }, {
-      codProvincia: "05",
-      nombre: "Ávila"
-    }, {
-      codProvincia: "06",
-      nombre: "Badajoz"
-    }, {
-      codProvincia: "52",
-      nombre: "Melilla"
-    }];
+ 
+
+    $scope.todos = [
+      {
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands"
+      },
+      {
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands"
+      },
+      {
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands"
+      },
+      {
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands"
+      },
+      {
+        what: 'Brunch this weekend?',
+        who: 'Min Li Chan',
+        when: '3:08PM',
+        notes: " I'll be in your neighborhood doing errands"
+      },
+    ];
+
+
+
+
+
 
 
 
