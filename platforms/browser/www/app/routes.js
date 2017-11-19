@@ -19,8 +19,9 @@ angular.module("ngapp").config(["$stateProvider", "$urlRouterProvider", function
     .state("propuesta", {
         url: "/propuesta",
         templateUrl: "app/components/propuesta/main.html",
-        title: "OPINAPP",
-
+        title: "OPINAPP | Propuestas",
+        controller: "propuestaController",
+        controllerAs: "propuesta"
     });
 
 
