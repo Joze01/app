@@ -4,12 +4,29 @@ angular.module("ngapp").config(["$stateProvider", "$urlRouterProvider", function
 
     $urlRouterProvider.otherwise("/main");
 
-    $stateProvider.state("main", {
+    $stateProvider
+
+
+    .state("main", {
         url: "/main",
         templateUrl: "app/components/main/main.html",
-        title: "Cordova Angular-Material",
+        title: "OPINAPP",
         controller: "MainController",
         controllerAs: "main"
+    })
+
+
+    .state("propuesta", {
+        url: "/propuesta",
+        templateUrl: "app/components/propuesta/main.html",
+        title: "OPINAPP",
+
     });
+
+
+
+
+
+
 
 }]);
