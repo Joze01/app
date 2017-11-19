@@ -51,7 +51,7 @@ angular.module("ngapp").controller("propuestaController", function(shared, $stat
 
 
 
-
+  console.log($scope);
 
     this.isOpen = function() { return false };
     $mdComponentRegistry
